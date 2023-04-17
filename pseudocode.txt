@@ -1,0 +1,782 @@
+ Declare the necessary libraries
+include <stdio.h>
+include <string.h>
+include <stdlib.h>
+
+Declare the necessary functions
+function enrollmentpro
+function facetofaceenr
+function onlineenr
+function admissionpro
+function facetofacead
+function onlinead
+function req
+function contact
+function course
+function studata
+function gradesheet
+function admission
+function request
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function main
+display "\n\n\t\t\tILOILO SCIENCE AND TECHNOLOGY UNIVERSITY"
+display "\n\t\tILOILO CITY CAMPUS | Burgos Street, La Paz, Iloilo City"
+display "\n\n\n\t\t OFFICE OF THE UNIVERSITY REGISTRAR AND ADMISSION\n\n\tMISSION"
+display "\n\t-THE OFFICE OF THE UNIVERSITY REGISTRAR AS AN ACADEMIC NON-TEACHING UNIT,"
+display "\n\t IS COMMITTED TO PROVIDE SUPPORT SERVICES TO ADMINISTRATION AND INSTRUCTION"
+display "\n\t TO HELP ISAT U ACHIEVE ITS GOALS AND OBJECTIVES.\n\n\tVISION"
+display "\n\t-THE OFFICE OF THE UNIVERSITY REGISTRAR AS THE FRONTLINE IN EXCELLENT"
+display "\n\t SERVICE TO STUDENTS, ALUMNI, FACULTY MEMBERS, AND THE GENERAL PUBLIC."
+char choice[40]
+display "\n\n=========================================================================================\n\n"
+display "\n\t\t\tI N F O R M A T I O N S E C T I O N\n"
+display "\n\tENROLLMENT PROCESS\n\n\tADMISSION PROCESS\n\n\tCONTACT INFORMATION\n\n\tCOURSES\n\n\tEXIT\n"
+display "\n\n=========================================================================================\n\n"
+display "\n\t\t\t F R O N T L I N E S E R V I C E\n"
+display "\n\tSTUDENT DATA\n\n\tADMISSION\n\n\tGRADE SHEET\n\n\tREQUEST\n\n\tEXIT\n\n\t : "
+get choice
+if (choice == "ENROLLMENT PROCESS\n") then
+	call function enrollmentpro
+	else if (choice == "ADMISSION PROCESS\n") then
+		call function admissionpro
+		else if (choice == "CONTACT INFORMATION\n") then
+			call function contact 
+			else if (choice == "COURSES\n") then
+				call function course
+				else if (choice == "STUDENT DATA\n") then
+					call function studata
+					else if (choice == "ADMISSION\n") then
+						call function admission
+						else if (choice == "GRADE SHEET\n") then
+							call function gradesheet
+							else if (choice == "REQUEST\n") then
+								call function request
+								else if (choice == "EXIT\n") then
+									display "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+									else then 
+										display "\tYou've made a mistake , Try again..\n\n\n", then call function main
+endif, endif, endif, endif, endif, endif, endif, endif, endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function enrollmentpro
+char choice[40]
+display "\n\n=========================================================================================\n\n"
+display "\n\n\tFACE TO FACE\n\n\tONLINE\n\n\tMAIN MENU\n\n\tEXIT\n\n\t : "
+get choice
+if (choice == "FACE TO FACE\n") then
+	call facetofaceenr
+	else if (choice == "ONLINE\n") then
+		call onlineenr
+		else if (choice == "MAIN MENU\n") then
+			call main
+			else if (choice == "EXIT\n") then
+				display "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+				else
+					display "\tYou've made a mistake , Try again..\n\n\n", then call function enrollmentpro
+endif, endif, endif, endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function facetofaceenr()
+display "\n\n=========================================================================================\n\n"
+display "\n\t\t\tF A C E  T O  F A C E  E N R O L L M E N T  P R O C E S S\n"
+int step = 1
+char response
+While ("step" <= 12) do
+    	Switch (step) then
+        	case 1:
+			display "\n\t-Step 1: Department Head / Enrollment Committee\n"
+           		display "\t\t-Student submits enrollment requirements for initial evaluation.\n"
+           		display "\t\t-Student fill-up the pre-registration form.\n"
+           		display "\t\t-Department Head/Enrollment Committee advises student and subject/s to enroll.\n"
+           		Break
+       		case 2:
+           		display "\n\tStep 2: Cashier's Office\n"
+           		display "\t\t-Students submits pre-registration form for appraisal of fees.\n"
+           		display "\t\t-Student pays the required fee.\n"
+           		Break
+       		case 3:
+           		display "\n\tStep 3: Department Head/Enrollment Committee\n"
+           		display "\t\t-Student submits pre-registration and official receipt for printing of registration form.\n"
+           		Break
+       		case 4:
+           		display "\n\tStep 4: Dean's Office\n"
+           		display "\t\t-Student submits pre-registration form and enrollment requirements for checking and approval.\n"
+           		Break
+       		case 5:
+           		display "\n\tStep 5: OURA\n"
+           		display "\t\t-OURA checks the completeness of the requirement submitted.\n"
+           		display "\t\t-OURA confirms the student enrollment in the registration system.\n"
+           		Break
+       		case 6:
+           		display "\n\tStep 6: Medical/Dental Clinic\n"
+           		display "\t\t-Student undergoes physical and dental examination.\n"
+           		display "\t\t-Gets referrals for medical examination.\n"
+           		Break
+       		case 7:
+           		display "\n\tStep 7: MIS/EDP\n"
+           		display "\t\t-Student presents registration form and referrals from the medical clinic for picture taking to be used for school id and library card.\n"
+           		Break
+       		case 8:
+           		display "\n\tStep 8: OSAS\n"
+           		display "\t\t-Student presents registration form for issuance and validation of school id.\n"
+           		Break
+       		case 9:
+           		display "\n\tStep 9: Library\n"
+           		display "\t\t-Student presents registration form for issuance and validation of library card.\n"
+           		Break
+       		case 10:
+           		display "\n\tStep 10: Dean's Office\n"
+           		display "\t\t-Student views posting of class schedules.\n"
+           		Break
+       		case 11:
+           		display "\n\tStep 11: Student\n"
+           		display "\t\t-Student reports to class as scheduled.\n"
+           		Break
+       		case 12:
+           		display "\n\tStep 12: Faculty\n"
+           		display "\t\t-Faculty admits student who are listed in the official class list.\n"
+           		Break
+	   		end switch
+	   		display "\n\t\tGo to next step? (y/n)"
+	  		get response
+	   		while (response != 'y') and (response != 'Y') do
+   		       		display "\n\t\tPlease complete the current step before proceeding.\n"
+   	   	       		display "\t\tGo to next step? (y/n) "
+			end while
+   		Increment step by 1
+	end while
+	display "\n\tCongratulations! You have completed the face to face enrollment process.\n" then call function req
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function onlineenr
+display "\n\n=========================================================================================\n\n"
+display "\n\t\t\tO N L I N E  E N R O L L M E N T  P R O C E S S\n"
+int step = 1
+char response
+while (step <= 4) do
+	switch (step)
+		case 1:
+			display "\n\tStep 1: Pre-Enrollment\n"
+			display "\t\t-Student access the Enrollment Link: .isatu.edu.ph using a browswer.\n"
+			display "\t\t-Student fill-up the Online Pre-Enrollment.\n"
+			display "\t\t-Student submits the Pre-Enrollment.\n"
+		case 2:
+			display "\n\tStep 2: Assessment\n"
+			display "\t\t-Enrollment Committee reviews and validates Student's Pre-Enrollment submitted online.\n"
+		case 3:
+			display "\n\tStep 3: Confirmation\n"
+			display "\t\t-OURA confirms enrollment of student based on the submitted Pre-Enrollment from the Dean's Offices.\n"
+			display "\t\t-OURA prints Pre-Registration Form for filing.\n"
+		case 4:
+			display "\n\tStep 4: Email Student\n"
+			display "\t\t-Online Enrollment System emails student the Confirmation of subjects/s enrolled.\n"
+			display "\t\tNOTE: STUDENT WAITS FOR CONFIRMATION OF SUBJECTS ENROLLED WITHIN A WEEK FROM THE DATE OF SUBMISSION\n"
+			end switch
+				display "\n\t\tGo to next step? (y/n) "
+				get response
+				while (response != 'y') and (response != 'Y') do
+					display "\n\t\tPlease complete the current step before proceeding.\n"
+					display "\t\tGo to next step? (y/n) "
+					get response
+			end while
+			Increment step by 1
+	end while
+	display "\n\tCongratulations! You have completed the online enrollment process.\n" then call function req
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function admissionpro
+char choice[40]
+display "=========================================================================================\n\n"
+display "\t\t\t\tA D M I S S I O N"
+display "\n\n\tFACE TO FACE"
+display "\n\n\tONLINE"
+displays "\n\n\tPROCESS TYPE : "
+get choice
+if (choice == "FACE TO FACE\n") then
+    call function facetofacead
+	else if (choice == "ONLINE\n") then
+    		call function onlinead
+		else if (choice == "MAIN MENY\n") then
+    			call function main
+			else if (choice == "EXIT\n") then
+				display "Thanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+				else
+					display "You've made a mistake , Try again..\n\n\n", then call function admissionpro
+endif ,endif, endif, endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function facetofacead
+display "=========================================================================================\n\n"
+display "\t\t\tF A C E  T O  F A C E  A D M I S S I O N  P R O C E S S\n"
+int step = 1
+char response
+while (step <= 4) do
+	switch (step) do
+		case 1:
+			display "\n\t Step 1: OURA\n\n"
+			display "\t\t-Fill-up Application Form for Admission.\n"
+			display "\t\t-Submit accomplished Application Form for Admission together with the Admission requirements.\n"
+		case 2:
+			display "\n\t Step 2: Cashier's Office\n\n"
+			display "\t\t-Applicant pays the required fee. (If applicable)\n"
+		case 3:
+			display "\n\t Step 3: OURA\n\n"
+			display "\t\t-Applicant submits Admission Form,Admission requirements and Official Receipt.\n"
+			display "\t\t-OURA encodes Applicant's Information and issues Admission Number.\n"
+		case 4:
+			display "\n\t Step 4: OSAS\n\n"
+			display "\t\t-Applicant submits Application Form for Admission.\n"
+			display "\t\t-OSAS validates the Admission Number of applicant.\n"
+			display "\t\t-OSAS schedules the University Admission Test of the applicant.\n"
+			end switch
+				display "\n\t\tGo to next step? (y/n) "
+				get response
+				while (response != 'y') and (response != 'Y') do
+					display "\n\t\tPlease complete the current step before proceeding.\n"
+					display "\t\tGo to next step? (y/n) "
+					get response
+			end while
+			Increment step by 1
+end while
+	display"\t\tCongratulations! You have completed the face-to-face admission process.\n", then call function req
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function onlinead
+    display "\n\n=========================================================================================\n\n"
+    display "\n\t\t\tO N L I N E  A D M I S S I O N   P R O C E S S\n"
+    int step = 1
+    char response
+    while (step <= 4) do
+        switch (step) then
+            case 1:
+                display "\n\tStep 1: Registration\n"
+                display "\t\t-Applicant access the link for the Online Application for Admission.\n"
+                display "\t\t-Applicant fill-in the Online Application for Admission.\n"
+                display "\t\t-Applicant uploads Admission Requirements in the online portal\n"
+                display "\t\tNOTE: ALL ADMISSION REQUIREMENTS SUBMITTED MUST BE IN PDF FILE FORMAT\n"
+            case 2:
+                display "\n\tStep 2: Verification of Admission Requirements\n"
+                display "\t\t-OURA verifies the authenticity of submitted admission credentials uploaded in the system.\n"
+                display "\t\t-OURA issues Admission Number through email.\n"
+            case 3:
+                display "\n\tStep 3: Schedule of Examination\n"
+                display "\t\t-OSAS schedules the University Admission Test of the applicant.\n"
+                display "\t\t-OSAS sends schedule/notice of University Admission Test of applicants through email.\n"
+            case 4:
+                display "\n\tStep 4: Examination, Interview and Posting\n"
+                display "\t\t-Applicant takes the Computer-Based University Admission Test as scheduled.\n"
+                display "\t\t-Applicant views posting of qualified applicants to take the Aptitude Test as scheduled. (If applicable)\n"
+                display "\t\t-Applicant views posting of qualified applicants for Interview.\n"
+                display "\t\t-Applicant views posting of qualified applicants for Enrollment.\n"
+                display "\t\tNOTE: APPLICANTS MUST VIEW ISAT UNIVERSITY-PUBLIC INFORMATION OFFICE FB PAGE FOR UPDATES\n"
+		end switch
+        		display "\n\t\tGo to next step? (y/n) "
+       			get response
+        		while response not in ['y', 'Y']:
+            			display "\n\t\tPlease complete the current step before proceeding.\n"
+            			display "\t\tGo to next step? (y/n) "
+            			get response
+        			Increment step by 1
+    display "\t\tCongratulations! You have completed the online admission process.\n", then call function req
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function req
+char choice[40]
+display "\n\n=========================================================================================\n\n"
+display "\n\t\t\tR E Q U I R E M E N T S  F O R  E N R O L L M E N T  /  A D M I S S I O N\n"
+display "\n\n\tOption 1: For Baccalaureate Degree/College Students"
+display "\n\n\tOption 2: For Advanced Education Students"
+display "\n\n\tOption 3: For Technical Vocational Education Students"
+display "\n\n\tOption 4: For Diploma in Teaching Students"
+display "\n\n\tOption 5: For Cross-Enrolees Students"
+display "\n\n\tMAIN MENUn\n\tEXIT\n\n\t : "
+get choice
+if (choice == "Option 1") then
+	display "\n\t\t\tFor Baccalaureate Degree/College Students\n"
+	display "\n\t- Original Senior High School Card (For Senior High School Graduate)\n"
+	display "\n\t- Original Certificate of Rating (For ALS Passer)\n"
+	display "\n\t- Original Certificate of Good Moral Character\n"
+	display "\n\t- Machine copy of NSO/PSA Birth Certificate\n"
+	display "\n\t- Machine copy of NSO/PSA Birth Certificate (if applicable)\n\n\n"
+  	call function req
+	else if (choice == "Option 2" then
+		display "\n\t\t\tFor Advanced Education Students\n"
+		display "\n\t- Machine copy of Official Transcript of Records"
+		display "\n\t- Original Certificate of Transfer Credentials (For Transferees)"
+		display "\n\t- Original Certificate of Good Moral"
+		display "\n\t- Machine copy of NSO/PSA Birth Certificate\n"
+		display "\n\t- Machine copy of NSO/PSA Birth Certificate (if applicable)\n\n\n"
+		call function req
+		else if (choice == "Option 3" then
+			display "\n\t\t\tFor Technical Vocational Education Students\n"
+			display "\n\t- Original Senior High School Card (For Senior High School Graduate)\n"
+			display "\n\t- Machine copy of Official Transcript of Records"
+			display "\n\t- Original Police Clearance"
+			display "\n\t- Machine copy of NSO/PSA Birth Certificate\n"
+			display "\n\t- Machine copy of NSO/PSA Birth Certificate (if applicable\n\n\n"
+			call function req
+			else if (choice == "Option 4" then
+				display "\n\t\t\tFor Diploma in Teaching Students\n"
+				display "\n\t- Machine copy of Official Transcript of Records"
+				display "\n\t- Original Certificate of Good Moral"
+				display "\n\t- Machine copy of NSO/PSA Birth Certificate\n"
+				display "\n\t- Machine copy of NSO/PSA Birth Certificate (if applicable\n\n\n"
+				call function req
+				else if (choice == "Option 5" then
+					display "\n\t\t\tFor Cross-Enrolees Students\n"
+					display "\n\t- Permit to Cross Enrolled from the School of Origin"
+					display "\n\t- Machine copy of NSO/PSA Authenticated Birth Certificate"
+					display "\n\t- Machine copy of NSO/PSA Marriage Contract (if applicable)\n\n\n"
+					call function req
+					else if (choice == "MAIN MENU") then
+						call function main
+						else if (choice == "EXIT") then
+							display "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+							ELSE
+							display "\tYou've made a mistake , Try again..\n\n\n", then call function main
+endif, endif, endif, endif, endif, endif, endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function course
+char choice[40]
+display "\n\n=========================================================================================\n\n");
+display "\n\t\t\tC U R R I C U L A R  O F F E R I N G S\n")
+display "\n\n\tILOILO CITY CAMPUS\n\n\tMIAGAO CAMPUS\n\n\tLEON CAMPUSn\n\tDUMANGGAS CAMPUS\n\n\tBAROTAC NUEVO CAMPUS"
+display \n\tMAIN MENU\n\n\tEXIT\n\n\t : "
+get choice
+if (choice == "ILOILO CITY CAMPUS\n") then
+	display "\n\n=========================================================================================\n\n"
+        display "\n\t\t\tI L O I L O  C I T Y  C A M P U S\n");
+        display "\n\n-----------------------------------------------------------------------------------------\n\n"
+        display "\t\t   **COLLEGE OF ENGINEERING AND ARCHITECTURE**"
+        display "\n\tBachelor of Science in Architecture"
+        display "\n\tBachelor of Science in Civil Engineering"
+        display "\n\tBachelor of Science in Electrical Engineering"
+        display "\n\tBachelor of Science in Electronics Engineering"
+        display "\n\tBachelor of Science in Mechanical Engineering"
+        display "\n\n-----------------------------------------------------------------------------------------\n\n"
+        display "\t\t   **COLLEGE OF ARTS AND SCIENCE**"
+        display "\n\tMaster of Science in Mathematics"
+        display "\n\tMaster of Science in Computer Science"
+        display "\n\tBachelor of Science in Community Development"
+        display "\n\tBachelor of Science in Human Services"
+        display "\n\tBachelor of Science in Computer Science"
+        display "\n\tBachelor of Science in Information Technology"
+        display "\n\tBachelor of Science in Information Systems"
+        display "\n\tBachelor of Science in Mathematics"
+        display "\n\tBachelor of Science in Biology (Biotechnology)")
+        display "\n\tBachelor of Arts in English Language"
+        display "\n\n-----------------------------------------------------------------------------------------\n\n"
+        display "\t\t   **COLLEGE OF EDUCATION**"
+        display "\n\tBachelor of Elementary Education"
+        display "\n\tBachelor of Secondary Education majors in:"
+        display "\n\t ~Filipino\n\t ~Mathematics\n\t ~Science"
+        display "\n\tBachelor of Technology and Livelihood Education majors in:"
+        display "\n\t ~Home Economics\n\t ~Industrial Arts\n\t ~Information and Communication Technology"
+        display "\n\tBachelor of Technical Vocational Teacher Education majors in:"
+        display "\n\t ~Architectural Drafting\n\t ~Automotive Technology\n\t ~Beauty Care and Wellness"
+        display "~Computer Programming\n\t ~Electrical Technology\n\t ~Electronics Technology\n\t ~Food and Service Management"
+        display "\n\n-----------------------------------------------------------------------------------------\n\n"
+        display "\t\t   **COLLEGE OF INDUSTRIAL TECHNOLOGY**
+        display "\n\tBachelor of Science in Entrepreneurship"
+        display "\n\tBachelor of Science in Fashion Design and Merchandizing"
+        display "\n\tBachelor of Science in Hospitality Management majors in"
+        display "\n\tBachelor of Science in Tourism Management"
+        display "\n\tBachelor of Industrial Technology majors in:"
+        display "\n\t ~Architectural Drafting Technology\n\t ~Automotive Technology\n\t ~Civil Technology\n\t ~Cosmetology"
+        display "\n\t ~Electrical Technology\n\t ~Electronics Technology\n\t ~Fashion and Apparel Technology"
+        display "\n\t ~Food Technology\n\t ~Heating Ventilating Air Conditioning-Refrigeration Technology"
+        display "\n\t ~Mechanical Technology\n\t ~Welding and Fabrication Technology"
+        call function course
+	else if (choice == "MIAGAO CAMPUS\n") then
+		display "\n\n=========================================================================================\n\n"
+        	display "\n\t\t\tM I A G A O  C A M P U S\n");
+        	display "\n\n-----------------------------------------------------------------------------------------\n\n"
+       	 	display "\n\tBachelor of Elementary Education"
+        	display "\n\tBachelor of Secondary Education majors in:"
+        	display "\n\t ~English\n\t ~Filipino\n\t ~Math\n\t ~Science\n\t ~Social Studies";
+        	display "\n\tBachelor of Technical Vocational Teacher Education majors in:"
+        	display "\n\t ~Automotive Technology\n\t ~Electrical Technology\n\t ~Food Service Management"
+		display "\n\t ~Drafting Technology\n\t ~Electronics Technology\n\t ~Garmets, Fashion & Design"
+		display "\n\tBachelor of Technical Vocational Teacher Education majors in:"
+		display "\n\t ~Home Economics\n\t ~Industrial Arts"
+		display "\n\tBachelor of Science in Information Technology"
+		display "\n\tBachelor of Science in Information Systems"
+		display "\n\tBachelor of Science in Tourism Management"
+		display "\n\tBachelor of Science in Entrepreneurship"
+		display "\n\t ~Architectural Drafting Technology\n\t ~Automotive Technology\n\t ~Cosmetology"
+		display "\n\t ~Electrical Technology\n\t ~Electronics Technology\n\t ~Fashion and Apparel Technology"
+		display "\n\t ~Food Technology\n\t ~Heating Ventilating Air Conditioning-Refrigeration Technology"
+		display "\n\t ~Welding and Fabrication Technology"
+		call function course
+		else if (choice == "LEON CAMPUS\n") then
+			display "\n\n=========================================================================================\n\n"
+        		display "\n\t\t\tL E O N  C A M P U S\n"
+			display "\n\n-----------------------------------------------------------------------------------------\n\n"
+			display "\n\tBachelor of Science in Agriculture majors in:"
+			display "\n\t ~Crop Science\n\t ~Animal Science"
+			display "\n\tBachelor of Technical-Vocational Teacher Education"
+			display "\n\t ~Agricultural Crops Production"
+			display "Bachelor of Technology and Livelihood Education major in:"
+			display "\n\t ~Agri-Fishery Arts"
+			call function course	
+			else if (choice == "DUMANGGAS CAMPUS\n") then
+				display "\n\n=========================================================================================\n\n"
+				display "\n\t\t\tD U M A N G G A S  C A M P U S\n"
+				display "\n\n-----------------------------------------------------------------------------------------\n\n"
+				display "\n\tBachelor of Sceince in Entrepreneurship");
+        			display "\n\tBachelor of Science in Hospitality Management");
+				display "\n\tBachelor of Science in Information Technology");
+       				display "\n\tBachelor of Industrial Technology major in");
+        			display "\n\t ~Architectural Drafting\n\t ~Electrical Technology\n\t ~Electronics Technology\n\t ~Automotive Technology"
+        			display "\n\t ~Computer Hardware Servicing\n\t ~Food Service Management"
+        			display "\n\t ~Electronics Technology\n\t ~Electrical Technology"
+				call function course
+				else if (choice == "BAROTAC NUEVO CAMPUS\n") then
+					display "\n\n=========================================================================================\n\n"
+					display "\n\t\t\tB A R O T A C  N U E V O  C A M P U S\n"
+					display "\n\n-----------------------------------------------------------------------------------------\n\n"
+					display "\n\tBachelor of Sceince in Entrepreneurship"
+					display "\n\tBachelor of Science in Hospitality Management"
+					display "\n\tBachelor of Industrial Technology major in"
+					display "\n\t ~Architectural Drafting\n\t ~Electrical Technology\n\t ~Electronics Technology\n\t ~Automotive Technology"
+					display "\n\tBachelor of Elementary Education"
+					display "\n\tBachelor of Secondary Education majors in: \n\t ~Math
+					display "Bachelor of Technical-Vocational Teacher Education major in:"
+					display "\n\t ~Automotive Technology\n\t ~Computer Hardware Servicing"
+					call function course
+					else if (choice == "MAIN MENU\n") then
+						call function main
+						else if (choice == "EXIT\n") then
+							dislay "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+							else
+								display("\tYou've made a mistake , Try again..\n\n\n", then call fuction course
+
+endif, endif, endif, endif, endif, endif, endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function contact
+char choice[40]
+display "\n\n=========================================================================================\n\n"
+display "\n\t\t\tC O N T A C T I N F O R M A T I O N\n"
+display "\n\tOffice of the University Registrar and Admission : (033) 3207190 local 160"
+display "\n\tFax : (033) 3294274"
+display "\n\tEmail Address : registrar@isatu.edu.ph"
+display "\n\tCounter Request Section : (033) 3207190 local 360"
+display "\n\tVerification Section : (033) 3207190 local 110"
+display "\n\tRecords Management Section : (033) 3297190 local 310"
+display "\n\tMAINn\tEXIT\n\t : "
+get choice
+if (choice == "MAIN MENU\n") then
+	call function main
+	else if (choice == "EXIT\n") then
+		display "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+			else
+				display "\tYou've made a mistake , Try again..\n\n\n", then call function contact
+endif, endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function studata
+declare fp as file pointer
+char filename[] = "draft.txt", studentid[30], new_filename[30], name[40], course[40], choice[20], grade[20], id[20], subjectname[20],
+	subjdescr[40], age[10], address[40], date_of_birth[40], place_of_birth[40], sex[10], sy[20], sems[20];
+int result, subject, starter = 1;
+display "========================================================================================="
+display "\n\t\t\tS T U D E N T D A T A\n"
+display "\n\tSTUDENT ID NUMBER : "
+get studentid
+fp = open file named filename in append mode
+close fp
+set new_filename to "STUDENT DATA/" concatenated with studentid concatenated with ".txt"
+rename file named filename to new_filename and assign result
+
+fp = open file named new_filename in append mode
+flush input buffer
+display "\n\tSEMESTER : "
+get sems
+if (sems == "1ST SEMESTER") then
+	display "\n\tSTUDENT NAME : "
+	get name
+	write "==============================P E R S O N A L D A T A==============================" to fp
+	write "STUDENT NAME : " concatenated with name to fp
+	display "\n\tAGE : "
+	get age
+	write "AGE : " concatenated with age to fp
+	display "\n\tSEX : "
+	get sex
+	write "SEX : " concatenated with sex to fp
+	write "ID NUMBER : " concatenated with studentid to fp
+	flush input buffer
+	display "\n\tCOURSE, YEAR, & SECTION : "
+	get course
+	write "COURSE & SECTION : " concatenated with course to fp
+	write "===============================C O U R S E D A T A===============================" to fp
+	display "\n\tNUMBER OF SUBJECTS : "
+	get subject
+	display "\n\tSchool Year : "
+	get sy
+	write "School Year : " concatenated with sy to fp
+	write "Semester : " concatenated with sems to fp
+	while (starter <= subject) do
+		display "\n\tSubject Name : "
+		get subjectname
+		write "Subject Name : " concatenated with subjectname to fp
+		display "\n\tSubject Description : "
+		get subjdescr
+		write "Subject Description : " concatenated with subjdescr to fp
+		display "\n\tGrade : "
+		get grade
+		write "Grade : " concatenated with grade to fp
+		flush input buffer
+		Increment starter by 1
+		end while
+		display "\n\tYou've successfully input the student data..."
+		close fp
+		else if (sems == "2ND SEMESTER") or (sems == "SUMMER") then
+			open file named new_filename in append mode and assign to fp
+			write "===============================C O U R S E D A T A===============================" to fp
+			display "\n\tNUMBER OF SUBJECTS : "
+			get subject
+			display "\n\tSchool Year : "
+			get sy 
+			write "School Year : " concatenated with sy to fp
+			write "Semester :
+			display "\n\tSubject Name : "
+    			flush the input buffer
+			get subjectname
+			write "Subject Description : " concatenated with subjdescr to fp
+  			flush the input buffer
+  			get subjdescr
+  			write "Subject Description : " concatenated with subjdescr to fp
+  			display "\n\tGrade : " 
+  			flush the input buffer
+  			get grade
+  			write "Grade : " concatenated with grade to fp
+  			flush the input buffer
+  			Increment starter by 1
+			write "\n\tYou've successfully input the student data..."
+			close fp
+			else
+				display "\t\n\nYou've made a mistake....try again" to the console
+				call the studata function
+endif, endif
+				display "\n\n\tMAIN MENU\nn\tEXIT\n\n\t: " to the console
+				get choice
+				if (choice == "MAIN MENU") then
+				call the main function
+					else if (choice == "EXIT") then
+						display "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n" to the console
+						else
+							display "\tYou've made a mistake , Try again..\n\n\n", then call function main
+endif, endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function gradesheet
+char cys[20], sy[20], ys[20], filename[] = "draft.txt", new_filename[40], subjectname[20], id[15], grade[10], choice[20], semester[20]
+int subject, result, starter = 1, starter1 = 1, students, studnum, from, to
+declare fp as file pointer
+display "===============================G R A D E  S H E E T==============================="
+display "SEMESTER : "
+get semester
+display "COURSE : "
+get cys
+display "YEAR & SECTION : "
+get ys
+display "SCHOOL YEAR"
+display "From "
+get from
+display "To "
+get to
+fp = fopen("draft.txt", "a")
+fclose(fp)
+set new_filename to "GRADE SHEET/" + cys + ys + from + "-" + to + ".txt"
+rename file named filename to new_filename and assign result
+
+fp = open file named filename in append mode
+if (semester = "1ST SEMESTER") then
+	write "COURSE, YEAR, & SECTION : " + cys + " " + ys to fp
+    	write "SCHOOL YEAR : " + from + "-" + to to fp
+   	write "\n=========1ST S E M E S T E R  G R A D E  S H E E T=========\n" to fp
+	write "\n\nSTUDENT ID   |SUBJECT NAME|" to fp
+	display "\n===============================1ST S E M E S T E R  G R A D E  S H E E T===============================\n"
+    	display "NUMBER OF SUBJECTS : "
+    	get subject
+    	display "NUMBER OF STUDENTS : "
+    	get studnum
+    	if (subject > 0) then
+        	for( x = 1; x <= subject; x++) then
+            		write "\n======================================" to fp
+            		display "SUBJECT NAME : "
+            		get subjectname
+            		write "\n\t     |  " + subjectname + "   |     " to fp
+            		for (y = 1; y <= studnum; y++) then
+                		display "STUDENT ID : "
+                		get id
+                		display "GRADE : "
+                		get grade
+                		write "\n" + id + "  |     " + grade + "      |" to fp
+            		endfor
+        	endfor
+        display "You've successfully input the subjects...\n"
+    		else
+        	display "\n\nYou've made a mistake....try again\n", then call function main
+	endif
+			else if (semester = "2ND SEMESTER") || (semester = "SUMMER") then
+				if (semester = "2ND SEMESTER") then
+					write"\n\n=========2ND S E M E S T E R  G R A D E  S H E E T=========\n" to fp
+					display "\n===============================2ND S E M E S T E R  G R A D E  S H E E T===============================\n" 
+						else if (semester = "SUMMER") then
+						write"\n\n=========S U M M E R  G R A D E  S H E E T=========\n" to fp
+						display "\n===============================S U M M E R  G R A D E  S H E E T===============================\n" 
+				write "\n\nSTUDENT ID   |SUBJECT NAME|"
+				display "NUMBER OF SUBJECTS : "
+				get subject
+				display "NUMBER OF STUDENTS : "
+				get studnum
+				if (subject > 0) then
+					for (x = 1; x <= subject; x++) then
+						write"\n======================================" to fp
+						display "SUBJECT NAME : "
+						get subjectname
+						write "\n\t     |  " + subjectname + "   |     " to fp
+						for (y = 1; y <= studnum; y++)
+               						display "STUDENT ID : "
+               						get id
+							display "GRADE : "
+             						get grade
+               						write "\n" + id + " to fp
+						endfor
+					endfor			
+					display "You've successfully input the subjects..."
+					else
+						display "\tYou've made a mistake....try again\n\n\n", then call function main
+close file
+endif, endif,
+	close fp
+	printf("\n\n\tMAIN MENU\n\n\tEXIT\n\n\t : ");
+	get choice
+	if (choice == "MAIN MENU") then
+    		call function main
+		else if (choice == "EXIT") then
+    			display "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+			else
+				display \tYou've made a mistake , Try again..\n\n\n" then call function main
+endif,endif
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function adddrop
+char choice[10],stuid[15], subname[10], subdes[25];
+int subj;
+display "\n\n=========================================================================================\n\n"
+display "\n\t\t\tA D D  /  D R O P  O F  S U B J E C T\n"
+display "\n\n\tADD\n\n\tDROP\n\n\t: "
+get choice
+display "\n\tSTUDENT ID : "
+get stuid
+display "\n\tNUMBER OF SUBJECT : "
+get subj
+for(int x = 1; x <= subj; x++)
+	display "\n\tSUBJECT NAME : "
+	get subname
+	display "\n\tSUBJECT DESCRIPTION : "
+	get subdes
+	display "\n\tSUCCESSFULLY %s THE SUBJECT", choice
+display "\n\n=========================================================================================\n");
+display "\n\n\tMAIN MENU\n\n\tEXIT\n\n\t : ");
+get choice
+if (choice == "MAIN MENU") then
+        call function main
+        else if (choice == "EXIT") then
+            display "\tThanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA\n\n"
+            else
+                display "\tYou've made a mistake , Try again..\n\n\n", then call function addrop
+endif,endif
+endfunction
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function admission
+char file_name[] = "draft.txt"
+char new_filename
+display "\n\t\t\tA P P L I C A T I O N  F O R  A D M I S S I O N\n"
+display "\n\tSEAT NUMBER: "
+get sn
+fp = open file named filename in append mode
+close file
+set new_filename to "ADMISSION DATA/" concatenated with studentid concatenated with ".txt"
+rename file named filename to new_filename and assign result
+
+fp = open file named filename in append mode
+display "\n\tLAST NAME : "
+get lastn
+write "\n\nLAST NAME : " + lastn to fp
+display "\n\tFIRST NAME : "
+get firstn
+write "\nFIRST NAME : " + firstn to fp
+display "\n\tMIDDLE NAME : "
+get middlen
+write "\nMIDDLE NAME : " + middlen to fp
+display "\n\tENTER SEX : "
+get sex
+write "\nSEX : " + sex to fp
+display "\n\tDATE OF BIRTH : "
+get dob
+write "\nDATE OF BIRTH : " + dob to fp
+display "\n\tPLACE OF BIRTH : "
+get pob
+write "\nPLACE OF BIRTH : " + pob to fp
+display "\n\tHOME ADDRESS : "
+get ha
+write "\nADDRESS : " + ha to fp
+display "\n\tSCHOOL LAST ATTENDED : "
+get sla
+write "\nSCHOOL LAST ATTENDED : " + sla to fp
+display "\n\tEXAMINATION DATE : "
+get ea
+write "\nDATE : " + ea to fp
+display "\n\tTIME : "
+get time
+write "\nTIME : " + time to fp
+display "\n\tROOM : "
+get room
+write "\nPLACE : " + room to fp
+display "\n\tACADEMIC AWARD RECIEVED : "
+get aar
+write "\nACADEMIC AWARD RECIEVED : " + aar to fp 
+print "\n\tDISABILITY (if any) : "
+get disability
+write "\nDISABILITY (if any) : " + disability to fp
+display "\n\tREASON FOR STUDYING IN THIS UNIVERSITY? : "
+get rfstu
+write "\nREASON FOR STUDYING IN THIS UNIVERSITY? : \n" + rfstu to fp   
+display "\n\tNO. OF BROTHERS STUDYING AT ISAT U : "
+get numbroisatu
+write "\nNO. OF BROTHERS STUDYING AT ISAT U : " + numbroisatu to fp   
+display "\n\tNO. OF SISTERS STUDYING AT ISAT U : "
+get numsisisat
+write "\nNO. OF SISTERS STUDYING AT ISAT U : " + numsisisat to fp
+close fp
+end function
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function request
+    char choice[40]
+    display "R E Q U E S T  R A T E  O F  F E E"
+    display "Official Transcript of Record (OTR) : Php. 30.00 per page"
+    display "Secondary Permanent Records (F137-A) : Php. 30.00"
+    display "Certification : Php. 30.00"
+    display "Certification of Transfer Credentials : Php. 25.00 + OTR Fee"
+    display "Certification Auth. & Verification (CAV) : Php. 30.00"
+    display "Authentication of Academic Records : Php. 30.00"
+    display "Report Card : Php. 10.00 per sem"
+    display "Report of Grades : Php. 30.00"
+    display "Certificate of Registration : Php. 30.00"
+    display "Reissuance of Diploma/Proficiency Certificate : Php. 100.00"
+    display "Appraisal Fee : Php. 50.00"
+    display "\n\tMAIN MENU\n\n\tEXIT\n\n\t: "
+    get choice
+    if (choice == "MAIN MENU") then
+        call function main
+    	else if (choice == "EXIT") THEN
+        	display "Thanks for using this program. Group of ALMINAZA, COSIO, FLORES, LANDA, PANIZA"
+    		else
+        		display "You've made a mistake, Try again...", then call function request
+endif, endif
+end function

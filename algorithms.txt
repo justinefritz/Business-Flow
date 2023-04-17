@@ -1,0 +1,206 @@
+function main algorithm
+Declare the name variables
+Display Iloilo Science and Technology Office of the University Registrar and Admission vision, mission, in information section such as enrollment process, admission process, contact information, courses, and in frontline services such as student data encoding, admission, grade sheet encoding, request for records, and exit
+Prompt user to enter the chosen option
+Get user input
+Compare choice to given set of value and execute
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function enrollmentpro
+Declare the name variables
+Display enrollment process options such as face to face, online, main menu, and exit
+Prompt user to enter the chosen option
+Get user input
+Compare choice to given set of value and execute
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function enrollmentpro
+function facetofaceenr
+Declare the name variables
+Assign initial value to a counter variable step
+Check the condition
+Display face to face enrollment process
+Ask user if they completed the current step
+Assign response as counter variable
+Get user input
+Check the condition
+Evaluate the condition
+Increment the counter variable step
+Evaluate the condition
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function onlineenr
+Declare the name variables
+Assign initial value to a counter variable step
+Check the condition
+Display online enrollment process
+Ask user if they completed the current step 
+Assign response as counter variable
+Check the condition
+Evaluate the condition
+Increment the counter variable step
+Evaluate the condition
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function admissionpro
+Declare the name variables
+Display admission options such face to face, online, main menu, and exit
+Prompt user to enter the chosen option
+Get user input
+Compare choice to given set of value and execute
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function facetofacead
+Declare the name variables
+Assign initial value to a counter variable step
+Check the condition
+Display face to face admission process
+Ask user if they completed the current step 
+Assign response as counter variable
+Get user input
+Check the condition
+Evaluate the condition
+Increment the counter variable step
+Evaluate the condition
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function onlinead
+Declare the name variables
+Assign initial value to a counter variable step
+Check the condition
+Display online admission process
+Ask user if they completed the current step 
+Assign response as counter variable
+Get user input
+Check the condition
+Evaluate the condition
+Increment the counter variable step
+Evaluate the condition
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function req
+Declare the name variables
+Display options such as what type of requirement they requested, main menu, and exit
+prompt user to enter the option
+Get user input
+Compare choice to given set of value and execute then display the contents
+Execute again the function
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function course
+Declare the name variables
+Display options such five campuses, main menu, and exit
+Prompt user to enter the chosen campus.
+Get user input
+Compare choice to given set of value and execute then display the contents
+Execute again the function
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function contact
+Declare the name variables
+Display the contact information
+Display options such as main menu, and exit
+Prompt user to enter the chosen option
+Get user input
+Compare choice to given set of value and execute
+
+function studata
+Declare a file pointer
+Declare the name variables
+Initialize starter = 1
+Prompt user to enter the Student ID
+Get user input
+Open the file in appending mode
+Close the file
+Rename the file name based on the value of STUDENT ID
+Open the file in appending mode
+Prompt user to enter the semester
+Get user input
+Compare semester to given set of values
+If user enter 1st Semester then ask for name, age, sex, course, year, section, number of subjection, and school year
+Assign starter as counter variable
+Get user input
+Check the condition
+Prompt user to enter subject name, subject description, and grades
+Get user input
+Increment the counter variable step
+Evaluate the condition
+Save all input data
+Close the file
+Display options such as main menu, and exit.
+Prompt user to enter the chosen option
+Get user input
+Compare choice to given set of values and execute
+Else if user enter 2nd Semester or Summer
+Assign starter as counter variable
+Check the condition
+Prompt user to enter subject name, subject description, and grades
+Get user input
+Increment the counter variable step
+Evaluate the condition
+Display options
+Prompt user to enter the chosen option
+Get user input
+Compare choice to given set of values and execute
+Save all data to file
+Close the file
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function addrop
+Declare the name variable
+Display options such as add or drop
+Prompt user to enter the student id
+Get student id
+Prompt user to enter the number of subject
+Get number of subject
+Prompt user to enter the subject name
+Get subject name
+Prompt user to enter the subject description
+Get subject description
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function gradesheet
+Declare the name variable
+Declare a file pointer
+Prompt user to enter the semester, course, year, and section
+Get user input
+Open the file in appending mode
+Close the file
+Rename the file name based on the value of semester, course, year, and section
+Open the file in appending mode
+If user the 1st Semester, then prompt user to enter number of students and subjects
+Display 1st Semester Grade Sheet
+Assign initial value to counter variable x
+Check the condition
+Prompt user to enter Subject Name, Student ID, and grades
+Get user input
+Increment the counter variable x
+Evaluate the condition
+Save all data to file
+Close the file
+Else if user enter 2nd Semester or Summer
+Display 2nd Semester Grade Sheet or Summer Grade Sheet
+Assign initial value to counter variable x
+Check the condition
+Prompt user to enter Subject Name, Student ID, and grades
+Increment the counter variable x
+Evaluate the condition
+Save all data to file
+Close the file
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function admission
+Declare the name variables
+Declare the file pointer
+Prompt user to enter the Seat Number
+Open the file in appending mode
+Close the file
+Rename the file name based on the value of semester, course, year, and section
+Open the file in appending mode
+Prompt user to enter the last name, first name, middle name, sex, date of birth, place of birth, home address, school last attended, date, time, place, academic award receives, disability, reason for studying to this university, number of brother and sister studying in this university
+Save all data to file
+Close the file
+End
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function request
+declare the name variable
+display all the content of request service such as records, and options
+Prompt user to enter the chosen option
+Get choice
+Compare to given set of values and execute
+
